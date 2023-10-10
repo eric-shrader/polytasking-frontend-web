@@ -1,0 +1,17 @@
+.body-box {
+  margin-top: 0.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+  padding-bottom: 70px;
+}
+
+.circleButton-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  min-width: 70%;
+}

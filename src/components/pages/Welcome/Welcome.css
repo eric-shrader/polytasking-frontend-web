@@ -1,0 +1,20 @@
+.welcome_box {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+}
+
+.welcome_text {
+  font-size: 2em;
+}
+
+.welcome_text h2 {
+  padding-left: 30px;
+  color: rgb(120, 113, 113);
+}
+
+.welcome_graphic img {
+  height: 600px;
+  width: 600px;
+}

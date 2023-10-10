@@ -1,0 +1,24 @@
+.filter {
+  position: absolute;
+  top: 0px;
+  left: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.filterBox {
+  position: relative;
+}
+
+.filter option {
+  background-color: white;
+  border: black solid 1px;
+  padding: 2px 5px;
+}
+
+.filter option:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
