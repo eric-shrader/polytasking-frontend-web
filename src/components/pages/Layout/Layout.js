@@ -16,7 +16,17 @@ const Layout = () => {
         <div></div>
         <div className="links">
           {isAuthenticated ? (
-            <button onClick={logout}>Log Out</button>
+            <button
+              onClick={() => {
+                logout({
+                  logoutParams: {
+                    returnTo: window.location.origin,
+                  },
+                });
+              }}
+            >
+              Log Out
+            </button>
           ) : (
             <button onClick={loginWithRedirect}>Log In</button>
           )}

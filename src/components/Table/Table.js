@@ -21,7 +21,7 @@ const Table = () => {
     const loader = document.getElementById("loader");
     const tableBox = document.getElementById("table_box");
     // construct url with query parameters
-    const baseUrl = "http://localhost:8080/api/tasks";
+    const baseUrl = "https://polytasking.com:443/api/tasks";
     const queryParameters = [];
     filterMap.forEach((value, key) => {
       queryParameters.push(`${key}=${encodeURIComponent(value)}`);
@@ -68,7 +68,7 @@ const Table = () => {
 
   async function onDelete(id) {
     const token = await getAccessTokenSilently();
-    await fetch(`http://localhost:8080/api/tasks/${id}`, {
+    await fetch(`https://polytasking.com:443/api/tasks/${id}`, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -84,7 +84,7 @@ const Table = () => {
     // need them in array form
     completedTasks = Array.from(completedTasks);
     const token = await getAccessTokenSilently();
-    await fetch(`http://localhost:8080/api/tasks`, {
+    await fetch(`https://polytasking.com:443/api/tasks`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

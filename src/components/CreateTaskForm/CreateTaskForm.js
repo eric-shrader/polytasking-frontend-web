@@ -12,7 +12,7 @@ const CreateTaskForm = () => {
 
   async function postTaskToBackend(task) {
     const token = await getAccessTokenSilently();
-    const response = await fetch("http://localhost:8080/api/tasks", {
+    const response = await fetch("https://polytasking.com:443/api/tasks", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
