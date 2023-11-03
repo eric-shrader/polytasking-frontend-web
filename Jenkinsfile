@@ -18,6 +18,6 @@ pipeline {
         //         echo 'Deploying to AWS...'
         //         sh 'terraform apply --auto-approve'
         //     }
-        }
+        // }
     }
 }
