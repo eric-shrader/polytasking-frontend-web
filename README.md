@@ -8,4 +8,4 @@ the front end is built using React. It is a single-page application(SPA) using r
 
 # deployment
 
-The web client is deployed using AWS Cloudfront as a CDN with the static files stored in a S3 bucket. If you decide to adapt and deploy your own version of the project, you may use the same model I use or feel free to deploy however you would like. (:
+The web client is deployed using AWS Cloudfront as a CDN with the static files stored in a S3 bucket. The terraform configuration is included in the repository. If you decide to adapt and deploy your own version of the project, you may use the same model I use or feel free to deploy however you would like. (:
