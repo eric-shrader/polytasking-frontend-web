@@ -48,7 +48,7 @@ const Table = () => {
         setTimeout(() => {
           loader.classList.add("hidden");
           tableBox.classList.remove("hidden");
-        }, 1500);
+        }, 500);
       } catch (error) {
         console.log(error);
       }
