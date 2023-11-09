@@ -81,6 +81,7 @@ resource "aws_s3_object" "files" {
     "js"   = "application/javascript",
     "jpg"  = "image/jpeg",
     "png"  = "image/png",
+    "svg"  = "image/svg+xml",
     "pdf"  = "application/pdf"
   }, element(split(".", each.value), length(split(".", each.value)) - 1), "application/octet-stream")
 }
