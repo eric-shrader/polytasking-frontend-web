@@ -18,6 +18,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying to AWS...'
+                sh 'terraform init'
                 sh 'terraform apply --auto-approve'
             }
         }
